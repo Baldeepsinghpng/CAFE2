@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hearth &amp; Honey Cafe | Cozy Neighbourhood Cafe (Demo Concept)</title>
+  <meta name="description" content="Hearth & Honey is a demo concept for a cozy neighbourhood cafe: fresh coffee, warm bakes, all-day brunch and a table for everyone.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="demo-bar">Demo concept. Names, prices, reviews and contact details are placeholders.</div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" data-brand>Hearth &amp; Honey</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Open menu">Menu</button>
+    <nav id="nav" class="nav" aria-label="Main">
+      <a href="#about">Our Corner</a>
+      <a href="#menu">Today's Board</a>
+      <a href="#gallery">Atmosphere</a>
+      <a href="#community">Community</a>
+      <a href="#visit" class="nav-cta">Visit us</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="kicker">Coffee &middot; Bakes &middot; Brunch</p>
+        <h1>Your corner table is <em>waiting.</em></h1>
+        <p class="lead">A neighbourhood cafe with warm bread, strong coffee and the kind of welcome that remembers your name.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#menu">See today's board</a>
+          <a class="btn btn-ghost" data-maps href="https://www.google.com/maps/search/?api=1&query=Your+Cafe+Address+Here" target="_blank" rel="noopener">Get directions</a>
+        </div>
+        <p class="open-now" id="openNow" aria-live="polite"></p>
+      </div>
+      <div class="hero-photos">
+        <figure class="arch"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80" alt="Cozy cafe interior with warm light and wooden tables" fetchpriority="high"></figure>
+        <figure class="round"><img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=600&q=80" alt="Latte with heart-shaped foam art"></figure>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-img reveal"><img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?auto=format&fit=crop&w=1000&q=80" alt="Friends chatting over coffee at a window table" loading="lazy"></div>
+      <div class="about-text reveal">
+        <p class="kicker">Our corner</p>
+        <h2>Small place. Big table.</h2>
+        <p>We opened with a few mismatched chairs and one rule: nobody leaves hungry or unwelcome. Everything is baked in-house, the coffee is roasted by people we know, and the playlist is chosen by whoever is on shift.</p>
+        <ul class="facts">
+          <li><strong>Baked daily</strong><span>Bread and sweets, fresh each morning</span></li>
+          <li><strong>Local first</strong><span>Produce from nearby growers where we can</span></li>
+          <li><strong>Everyone in</strong><span>Students, families, laptops and book clubs</span></li>
+        </ul>
+        <p class="fine">Demo copy. Replace with the real cafe's story.</p>
+      </div>
+    </section>
+
+    <section class="board-section" id="menu">
+      <div class="board">
+        <h2>Today's Board</h2>
+        <div class="tabs" role="tablist" aria-label="Menu categories">
+          <button class="tab on" role="tab" aria-selected="true" data-tab="coffee">Coffee</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="bakery">Bakery</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="brunch">Brunch</button>
+        </div>
+        <div class="panel" data-panel="coffee">
+          <ul class="items">
+            <li><div><h3>House Filter</h3><p>Warm, nutty, refills welcome</p></div><span>&#8377;150</span></li>
+            <li><div><h3>Honey Cortado</h3><p>Double shot, steamed milk, a spoon of honey</p></div><span>&#8377;190</span></li>
+            <li><div><h3>Spiced Chai</h3><p>Slow-simmered with ginger and cardamom</p></div><span>&#8377;140</span></li>
+            <li><div><h3>Iced Caramel Latte</h3><p>Our summer regular</p></div><span>&#8377;230</span></li>
+          </ul>
+        </div>
+        <div class="panel" data-panel="bakery" hidden>
+          <ul class="items">
+            <li><div><h3>Cinnamon Swirl</h3><p>Still warm at ten o'clock</p></div><span>&#8377;160</span></li>
+            <li><div><h3>Banana Walnut Loaf</h3><p>Thick slice, salted butter</p></div><span>&#8377;140</span></li>
+            <li><div><h3>Butter Croissant</h3><p>Flaky, golden, honest</p></div><span>&#8377;170</span></li>
+            <li><div><h3>Seasonal Fruit Tart</h3><p>Ask what's in season</p></div><span>&#8377;210</span></li>
+          </ul>
+        </div>
+        <div class="panel" data-panel="brunch" hidden>
+          <ul class="items">
+            <li><div><h3>Corner Breakfast Plate</h3><p>Eggs your way, toast, roasted tomatoes</p></div><span>&#8377;350</span></li>
+            <li><div><h3>Smashed Avocado Toast</h3><p>Sourdough, chilli flakes, lime</p></div><span>&#8377;320</span></li>
+            <li><div><h3>Mushroom Melt</h3><p>Three cheeses on thick bread</p></div><span>&#8377;340</span></li>
+            <li><div><h3>Pancake Stack</h3><p>Maple, berries and a little cream</p></div><span>&#8377;300</span></li>
+          </ul>
+        </div>
+        <p class="fine">Demo menu and prices. Replace with the real menu.</p>
+      </div>
+      <figure class="board-img"><img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=900&q=80" alt="Brunch plate with eggs, toast and greens" loading="lazy"></figure>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+      <div class="head"><p class="kicker">Atmosphere</p><h2>Come for coffee, stay for the light.</h2></div>
+      <div class="gallery">
+        <button class="g g1" data-full="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1600&q=80"><img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=80" alt="Sunlit cafe room with wooden tables" loading="lazy"></button>
+        <button class="g g2" data-full="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80" alt="Cappuccino on a saucer" loading="lazy"></button>
+        <button class="g g3" data-full="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1600&q=80"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" alt="Freshly baked bread" loading="lazy"></button>
+        <button class="g g4" data-full="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1600&q=80"><img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=800&q=80" alt="Customers enjoying drinks at the cafe" loading="lazy"></button>
+        <button class="g g5" data-full="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1600&q=80"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80" alt="Golden croissants" loading="lazy"></button>
+      </div>
+    </section>
+
+    <section class="community" id="community">
+      <div class="comm-grid">
+        <div class="comm-card reveal"><h3>Open-mic Fridays</h3><p>Poetry, music or terrible jokes. Sign up at the counter.</p></div>
+        <div class="comm-card reveal"><h3>Book swap shelf</h3><p>Leave one, take one. No library card needed.</p></div>
+        <div class="comm-card reveal"><h3>Study hours</h3><p>Quiet tables, free refills on filter coffee for students.</p></div>
+      </div>
+      <div class="quotes">
+        <p class="fine tagline">Demo reviews</p>
+        <blockquote class="reveal"><p>It feels like walking into a friend's kitchen.</p><cite>Sample Guest A</cite></blockquote>
+        <blockquote class="reveal"><p>The cinnamon swirl alone is worth the trip.</p><cite>Sample Guest B</cite></blockquote>
+      </div>
+      <p class="fine">Events above are demo ideas, not real programmes.</p>
+    </section>
+
+    <section class="visit" id="visit">
+      <div class="visit-card">
+        <h2>Find us. Sit down. Stay awhile.</h2>
+        <address>123 Demo Street, Your City, State 000000</address>
+        <ul class="hours" id="hours">
+          <li data-day="1,2,3,4,5"><span>Mon &ndash; Fri</span><span>7:30 am &ndash; 9:00 pm</span></li>
+          <li data-day="6"><span>Saturday</span><span>8:00 am &ndash; 10:00 pm</span></li>
+          <li data-day="0"><span>Sunday</span><span>8:00 am &ndash; 8:00 pm</span></li>
+        </ul>
+        <p class="fine">Demo hours.</p>
+        <div class="actions">
+          <a class="btn btn-primary" data-maps href="https://www.google.com/maps/search/?api=1&query=Your+Cafe+Address+Here" target="_blank" rel="noopener">Open in Google Maps</a>
+          <a class="btn btn-ghost" data-tel href="tel:+910000000000">Call us</a>
+          <a class="btn btn-ghost" data-wa href="https://wa.me/910000000000?text=Hello%2C%20I%20would%20like%20to%20ask%20about%20a%20table" target="_blank" rel="noopener">WhatsApp us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><strong data-brand>Hearth &amp; Honey</strong> &middot; Demo concept, not a real business.</p>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <div class="mobile-bar">
+    <a data-tel href="tel:+910000000000">Call</a>
+    <a data-wa href="https://wa.me/910000000000" target="_blank" rel="noopener">WhatsApp</a>
+    <a data-maps href="https://www.google.com/maps/search/?api=1&query=Your+Cafe+Address+Here" target="_blank" rel="noopener">Directions</a>
+  </div>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+    <button class="lb-close" aria-label="Close photo">&times;</button>
+    <img alt="">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
